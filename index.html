@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play classic board games online, locally, or against AI on ChanBlake Games.">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>ChanBlake Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ChanBlake Games home">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span>ChanBlake Games</span>
+    </a>
+    <a class="nav-link" href="#games">All games</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">QUICK GAMES. REAL OPPONENTS.</p>
+      <h1 id="page-title">Pick a game.<br>Start playing.</h1>
+      <p class="hero-copy">Classic strategy games built for quick matches with friends, local play, and AI opponents.</p>
+      <a class="primary-button" href="#games">Browse games <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="library" id="games" aria-labelledby="games-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">GAME LIBRARY</p>
+          <h2 id="games-heading">Choose your board</h2>
+        </div>
+        <p class="game-count">8 games</p>
+      </div>
+
+      <div class="game-grid">
+        <a class="game-card featured" href="/pente/" aria-label="Play Pente">
+          <div class="game-preview pente-preview" aria-hidden="true">
+            <span class="piece black p1"></span>
+            <span class="piece white p2"></span>
+            <span class="piece black p3"></span>
+            <span class="piece white p4"></span>
+            <span class="piece black p5"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Strategy</span><span>2 players</span></div>
+            <h3>Pente</h3>
+            <p>Build a line of five or capture five pairs before your opponent.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/chess/" aria-label="Play Chess">
+          <div class="game-preview chess-preview" aria-hidden="true">
+            <span class="chess-piece rook">♜</span>
+            <span class="chess-piece knight">♞</span>
+            <span class="chess-piece king">♚</span>
+            <span class="chess-piece pawn">♟</span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Classic</span><span>2 players</span></div>
+            <h3>Chess</h3>
+            <p>Outthink your opponent and trap the king in checkmate.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/checkers/" aria-label="Play Checkers">
+          <div class="game-preview checkers-preview" aria-hidden="true">
+            <span class="checker red c1"></span><span class="checker dark c2"></span>
+            <span class="checker red c3"></span><span class="checker dark c4"></span>
+            <span class="checker red kinged c5"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Classic</span><span>2 players</span></div>
+            <h3>Checkers</h3>
+            <p>Jump, capture, and crown your way across the board.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/four-in-a-row/" aria-label="Play Four in a Row">
+          <div class="game-preview connect-preview" aria-hidden="true">
+            <span class="disc yellow d1"></span><span class="disc red d2"></span>
+            <span class="disc yellow d3"></span><span class="disc red d4"></span>
+            <span class="disc yellow d5"></span><span class="disc red d6"></span>
+            <span class="disc yellow d7"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Quick</span><span>2 players</span></div>
+            <h3>Four in a Row</h3>
+            <p>Drop your pieces and connect four before the board fills up.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/reversi/" aria-label="Play Reversi">
+          <div class="game-preview reversi-preview" aria-hidden="true">
+            <span class="reversi-piece light r1"></span><span class="reversi-piece dark r2"></span>
+            <span class="reversi-piece dark r3"></span><span class="reversi-piece light r4"></span>
+            <span class="reversi-piece dark r5"></span><span class="reversi-piece light r6"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Strategy</span><span>2 players</span></div>
+            <h3>Reversi</h3>
+            <p>Surround opposing pieces and flip the board in your favor.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/gomoku/" aria-label="Play Gomoku">
+          <div class="game-preview gomoku-preview" aria-hidden="true">
+            <span class="piece black g1"></span><span class="piece white g2"></span>
+            <span class="piece black g3"></span><span class="piece white g4"></span>
+            <span class="piece black g5"></span><span class="piece white g6"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Strategy</span><span>2 players</span></div>
+            <h3>Gomoku</h3>
+            <p>Claim intersections and create an unbroken line of five.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/mancala/" aria-label="Play Mancala">
+          <div class="game-preview mancala-preview" aria-hidden="true">
+            <span class="store left-store"></span><span class="store right-store"></span>
+            <span class="pit m1"></span><span class="pit m2"></span><span class="pit m3"></span>
+            <span class="pit m4"></span><span class="pit m5"></span><span class="pit m6"></span>
+            <span class="seed s1"></span><span class="seed s2"></span><span class="seed s3"></span>
+            <span class="seed s4"></span><span class="seed s5"></span><span class="seed s6"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Classic</span><span>2 players</span></div>
+            <h3>Mancala</h3>
+            <p>Sow your stones wisely and collect more than your opponent.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="game-card" href="/dots-and-boxes/" aria-label="Play Dots and Boxes">
+          <div class="game-preview dots-preview" aria-hidden="true">
+            <span class="dot q1"></span><span class="dot q2"></span><span class="dot q3"></span>
+            <span class="dot q4"></span><span class="dot q5"></span><span class="dot q6"></span>
+            <span class="dot q7"></span><span class="dot q8"></span><span class="dot q9"></span>
+            <span class="line horizontal l1"></span><span class="line vertical l2"></span>
+            <span class="line horizontal l3"></span><span class="line vertical l4"></span>
+            <span class="box-fill"></span>
+          </div>
+          <div class="game-details">
+            <div class="game-meta"><span>Quick</span><span>2 players</span></div>
+            <h3>Dots &amp; Boxes</h3>
+            <p>Complete squares, keep your turn, and claim the most territory.</p>
+            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>ChanBlake Games</p>
+    <p>Pick a board and play.</p>
+  </footer>
+</body>
+</html>
