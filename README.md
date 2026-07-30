@@ -1,3 +1,3 @@
-# ChanBlake Games homepage
+# Homepage update
 
-Main game-library homepage with nine active routes, including `/blackjack/`. Upload these files to the root `chanblake.github.io` repository.
+Replace the root `index.html` in `ChanBlake/chanblake.github.io` with this file. Keep your existing `styles.css`.
