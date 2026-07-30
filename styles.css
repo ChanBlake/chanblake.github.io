@@ -370,6 +370,23 @@ h3 {
 .s5 { left:48%; top:72%; background:#e1bf57; } .s6 { left:67%; top:65%; background:#713825; }
 
 
+
+.new-badge {
+  position: absolute;
+  z-index: 6;
+  top: 14px;
+  right: 14px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #f4f1ea;
+  color: #234a39;
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0,0,0,.16);
+}
+
 /* Blackjack */
 .blackjack-preview {
   background:
