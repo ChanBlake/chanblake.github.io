@@ -1,3 +1,7 @@
-# Homepage update
+# ChanBlake Games
 
-Replace the root `index.html` in `ChanBlake/chanblake.github.io` with this file. Keep your existing `styles.css`.
+The static game library published at `chanblake.github.io`.
+
+## Emberfall: Last Light
+
+The new mobile-first roguelite lives in `emberfall/`. It is dependency-free and uses Canvas, Web Audio, local storage, and an optional service worker. Open `emberfall/index.html` through a local web server to test it, or publish the repository through GitHub Pages and visit `/emberfall/`.
