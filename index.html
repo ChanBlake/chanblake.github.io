@@ -6,7 +6,7 @@
   <meta name="description" content="Play handcrafted strategy, card, and action games in your browser on ChanBlake Games.">
   <meta name="theme-color" content="#f4f1ea">
   <title>ChanBlake Games</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <style>
     .shogi-preview {
       background-color: #d9a85f;
@@ -44,7 +44,10 @@
       </span>
       <span>ChanBlake Games</span>
     </a>
-    <a class="nav-link" href="#games">All games</a>
+    <nav class="nav-links" aria-label="Game categories">
+      <a class="nav-link" href="#board-games">Board games</a>
+      <a class="nav-link" href="#single-player">Single player</a>
+    </nav>
   </header>
 
   <main>
@@ -59,12 +62,35 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">GAME LIBRARY</p>
-          <h2 id="games-heading">Choose your game</h2>
+          <h2 id="games-heading">Choose how you play</h2>
         </div>
-        <p class="game-count">11 games</p>
+        <p class="game-count">12 games</p>
       </div>
 
-      <div class="game-grid">
+      <nav class="category-nav" aria-label="Browse the game library">
+        <a class="category-link" href="#board-games">
+          <span class="category-icon board-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span><strong>Board games</strong><small>Strategy, classics, and quick matches</small></span>
+          <b aria-hidden="true">9&nbsp; →</b>
+        </a>
+        <a class="category-link" href="#single-player">
+          <span class="category-icon solo-icon" aria-hidden="true">◆</span>
+          <span><strong>Single player</strong><small>Solo runs, high scores, and progression</small></span>
+          <b aria-hidden="true">3&nbsp; →</b>
+        </a>
+      </nav>
+
+      <section class="game-category" id="board-games" aria-labelledby="board-games-heading">
+        <div class="category-heading">
+          <div>
+            <p class="eyebrow">HEAD-TO-HEAD &amp; AI</p>
+            <h2 id="board-games-heading">Board games</h2>
+            <p>Familiar rules, thoughtful strategy, and matches you can finish on a break.</p>
+          </div>
+          <span class="category-count">9 games</span>
+        </div>
+
+        <div class="game-grid board-game-grid">
         <a class="game-card featured" href="/pente/" aria-label="Play Pente">
           <div class="game-preview pente-preview" aria-hidden="true">
             <span class="piece black p1"></span>
@@ -77,43 +103,6 @@
             <div class="game-meta"><span>Strategy</span><span>2 players</span></div>
             <h3>Pente</h3>
             <p>Build a line of five or capture five pairs before your opponent.</p>
-            <span class="play-button">Play now <span aria-hidden="true">→</span></span>
-          </div>
-        </a>
-
-        <a class="game-card" href="/emberfall/" aria-label="Play Emberfall: Last Light">
-          <div class="game-preview emberfall-preview" aria-hidden="true">
-            <span class="new-badge">New</span>
-            <span class="ef-moon"></span>
-            <span class="ef-husk ef-husk-one"></span>
-            <span class="ef-husk ef-husk-two"></span>
-            <span class="ef-hero"><i></i></span>
-            <span class="ef-bolt ef-bolt-one"></span>
-            <span class="ef-bolt ef-bolt-two"></span>
-            <span class="ef-ember ef-ember-one"></span>
-            <span class="ef-ember ef-ember-two"></span>
-            <span class="ef-ember ef-ember-three"></span>
-          </div>
-          <div class="game-details">
-            <div class="game-meta"><span>Action</span><span>1 player</span></div>
-            <h3>Emberfall</h3>
-            <p>Build an impossible flame, survive the horde, and carry permanent upgrades home.</p>
-            <span class="play-button">Enter the night <span aria-hidden="true">→</span></span>
-          </div>
-        </a>
-
-        <a class="game-card" href="/blackjack/" aria-label="Play Blackjack">
-          <div class="game-preview blackjack-preview" aria-hidden="true">
-            <span class="bj-card bj-back"></span>
-            <span class="bj-card bj-ace"><b>A</b><i>♠</i></span>
-            <span class="bj-card bj-king"><b>K</b><i>♥</i></span>
-            <span class="bj-chip bj-chip-one">25</span>
-            <span class="bj-chip bj-chip-two">100</span>
-          </div>
-          <div class="game-details">
-            <div class="game-meta"><span>Cards</span><span>1 player</span></div>
-            <h3>Blackjack</h3>
-            <p>Manage your fake-chip bankroll and beat the dealer to 21.</p>
             <span class="play-button">Play now <span aria-hidden="true">→</span></span>
           </div>
         </a>
@@ -236,13 +225,84 @@
             <span class="play-button">Play now <span aria-hidden="true">→</span></span>
           </div>
         </a>
-      </div>
+        </div>
+      </section>
+
+      <section class="game-category" id="single-player" aria-labelledby="single-player-heading">
+        <div class="category-heading">
+          <div>
+            <p class="eyebrow">YOUR RUN. YOUR SCORE.</p>
+            <h2 id="single-player-heading">Single player games</h2>
+            <p>Jump into a quick round, chase a better run, or build power over time.</p>
+          </div>
+          <span class="category-count">3 games</span>
+        </div>
+
+        <div class="game-grid single-player-grid">
+          <a class="game-card featured" href="/emberfall/" aria-label="Play Emberfall: Last Light">
+            <div class="game-preview emberfall-preview" aria-hidden="true">
+              <span class="new-badge">New</span>
+              <span class="ef-moon"></span>
+              <span class="ef-husk ef-husk-one"></span>
+              <span class="ef-husk ef-husk-two"></span>
+              <span class="ef-hero"><i></i></span>
+              <span class="ef-bolt ef-bolt-one"></span>
+              <span class="ef-bolt ef-bolt-two"></span>
+              <span class="ef-ember ef-ember-one"></span>
+              <span class="ef-ember ef-ember-two"></span>
+              <span class="ef-ember ef-ember-three"></span>
+            </div>
+            <div class="game-details">
+              <div class="game-meta"><span>Action</span><span>1 player</span><span>Progression</span></div>
+              <h3>Emberfall</h3>
+              <p>Build an impossible flame, survive the horde, and carry permanent upgrades home.</p>
+              <span class="play-button">Enter the night <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="game-card" href="/blackjack/" aria-label="Play Blackjack">
+            <div class="game-preview blackjack-preview" aria-hidden="true">
+              <span class="bj-card bj-back"></span>
+              <span class="bj-card bj-ace"><b>A</b><i>♠</i></span>
+              <span class="bj-card bj-king"><b>K</b><i>♥</i></span>
+              <span class="bj-chip bj-chip-one">25</span>
+              <span class="bj-chip bj-chip-two">100</span>
+            </div>
+            <div class="game-details">
+              <div class="game-meta"><span>Cards</span><span>1 player</span></div>
+              <h3>Blackjack</h3>
+              <p>Manage your fake-chip bankroll and beat the dealer to 21.</p>
+              <span class="play-button">Play now <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="game-card" href="/canopy-run/" aria-label="Play Canopy Run">
+            <div class="game-preview canopy-preview" aria-hidden="true">
+              <span class="cr-sun"></span>
+              <span class="cr-vine cr-vine-one"></span>
+              <span class="cr-vine cr-vine-two"></span>
+              <span class="cr-branch cr-branch-one"></span>
+              <span class="cr-branch cr-branch-two"></span>
+              <span class="cr-runner"><i></i></span>
+              <span class="cr-leaf cr-leaf-one"></span>
+              <span class="cr-leaf cr-leaf-two"></span>
+              <span class="cr-leaf cr-leaf-three"></span>
+            </div>
+            <div class="game-details">
+              <div class="game-meta"><span>Arcade</span><span>1 player</span></div>
+              <h3>Canopy Run</h3>
+              <p>Race through a vibrant forest canopy and push your run farther each time.</p>
+              <span class="play-button">Start running <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </section>
     </section>
   </main>
 
   <footer>
     <p>ChanBlake Games</p>
-    <p>Pick a board and play.</p>
+    <p>Pick a game and play.</p>
   </footer>
 </body>
 </html>
